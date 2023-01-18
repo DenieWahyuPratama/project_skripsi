@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename ='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename ='img/logo.png') }}" alt="Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <h1>Cek URL</h1>
+  <form action="/check_url/" method="post">
+    <input type="text" placeholder="Masukkan URL" id="url" name="url" required>
+    <input type="submit" value="Cek">
+  </form>
+  <footer>
+    Copyright 2021
+  </footer>
+</body>
+</html>

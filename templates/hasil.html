@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename ='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename ='img/logo.png') }}" alt="Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <h1>{% if hasil %}
+    <div class="hasil">{{ hasil }}</div>
+   {% endif %}</h1>
+   <form action="/" method="get">
+    <input type="submit" value="Cek URL Lagi">
+    </form>
+  <footer>
+    Copyright 2021
+  </footer>
+</body>
+</html>
